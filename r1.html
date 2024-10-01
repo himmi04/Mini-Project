@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting System</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .navbar-custom {
+            background-color: #343a40;
+            color: white;
+            height: 100vh; /* Full height */
+            width: 13%; /* Set navbar to 30% of the screen */
+            float: left; /* Ensure it stays on the left */
+        }
+        .content-custom {
+            background-color: #f8f9fa;
+            height: 100vh; /* Full height */
+            width: 87%; /* Set content area to 70% of the screen */
+            float: left; /* Ensure it stays next to the navbar */
+        }
+
+        .container{
+            border: 2px solid red;
+            width:300px;
+        }
+        .box li:hover{
+            background-color: black;
+        }
+        
+       #voting_img_2{
+        margin-top: 10px;
+        border:6px solid #343a40;
+       }
+       #voting_img_1{
+        display: block;
+        border:6px solid #343a40;
+       }
+       marquee {
+        background-color: black;
+        color: white;
+       }
+        
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+
+            <!-- Navbar (30% width) -->
+            <nav class="navbar-custom">
+                <img src="election_logo2.png" class="rounded-circle" height="100px" width="100px">
+                <ul class="nav flex-column box">
+                    <li class="nav-item"><a class="nav-link text-light" href="#Home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#">Login as voter/poltical party</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#">Register as voter/political party</a></li>
+                    <li class="nav-item"><h6 class="nav-link text-light">Contact <i class="bi bi-telephone"></i> 9422831117 </h6></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#">Privacy policies</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#">User Guide</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Content Area (70% width) -->
+            <div class="content-custom">
+
+                <div id="Home">
+
+                <h3 class="text-center" style="color: #343a40;">Online Voting System</h3>
+
+                <marquee>General Election will be held starting from 19 April 2024</marquee>
+
+                <ul class="row list-unstyled" >
+                    <li class="col-md-6 voting_image">
+                        <img id="voting_img_1" class="img-fluid" src="voting_3.jpg">
+                    </li>
+                    <li class="col-md-6">
+                        <img src="voting_4.jpg" id="voting_img_2" class="img-fluid voting_image">
+                    </li>
+                </ul>
+
+                <h6 style="font-size:30px">About us</h6>
+                <p style="font-size: 18px;">We believe that every voice matters, and our platform empowers millions of voters by removing geographical and physical barriers.We believe that every voice matters, and our platform empowers millions of voters by removing geographical and physical barriers.Whether it's a local election or a national one, our platform is ready to serve India with cutting-edge technology and a commitment to democratic values. Together, we can make voting easier, more inclusive, and more efficient for a brighter democratic future.</p>
+
+                <!-- <ul class="row">
+                    <li class="col-md-5 list-unstyled">
+                        <div class="container">
+                            <img src="political_party.png" class="img-fluid">
+                            <a href="#">New registration for political parties</a>
+                        </div>
+                    </li>
+                    <li class="col-md-5 list-unstyled">
+                        <div class="container">
+                            <img id="voter_card" src="voter_card.jpg" class="img-fluid">
+                            <a href="#">Voter Card</a>
+                        </div>
+                    </li>
+                </ul> -->
+                
+            </div> <!-- home --> 
+
+        </div> <!-- content-custom -->
+    </div> <!-- row -->
+</div> <!--container-fluid -->
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
